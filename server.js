@@ -12,7 +12,7 @@ const entries = require('./controllers/entries');
 const db = knex({
   client: 'pg',
   connection: {
-    host : process.env.DATABASE_URL,
+    connectionStrings : process.env.DATABASE_URL,
     ssl: true,
   }
 });
